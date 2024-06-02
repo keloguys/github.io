@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <link href="css/stylesheet.css">
+    
+    <title>Колледж</title>
+    <style>
+        @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #1c92d2, #f2fcfe);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header, .footer {
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 20px;
+            width: 80%;
+        }
+        .content {
+            margin: 20px;
+            width: 80%;
+        }
+        .block {
+            margin-bottom: 20px;
+        }
+        h1, h2 {
+            color: #1c92d2;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        h2, img {
+            animation: fadeIn 2s;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>КСТ - Колледж Современных Технологий</h1>
+    </div>
+
+    <div class="content">
+        <div class="block" style="display: flex; align-items: center; justify-content: space-between; transition: transform 0.3s ease-in-out;">
+            <img src="https://avatars.mds.yandex.net/get-altay/374295/2a0000015b163509be72bb5bc8659750d351/orig"  width="30%" height="150%">
+            <div style="width: 60%;">
+                <h2><a href="https://kst.mskobr.ru/" target="_blank">Колледж</a></h2>
+                <b>
+                    <p>Государственное бюджетное профессиональное образовательное учреждение города Москвы «Колледж современных технологий имени Героя Советского Союза М.Ф. Панова»</p>
+                </b>
+            </div>
+        </div>
+        <div class="block">
+            <!-- Your second block content -->
+        </div>
+    </div>
+
+
+
+<script>
+    // Add this script to the end of your HTML file
+    const block = document.querySelector('.block');
+
+    block.addEventListener('mouseover', () => {
+        block.style.transform = "scale(1.05)";
+    });
+
+    block.addEventListener('mouseout', () => {
+        block.style.transform = "scale(1)";
+    });
+</script>
+<div class="block" style="display: flex; align-items: center; justify-content: space-between; transition: transform 0.3s ease-in-out;">
+    <img src="ок.jpg" width="30%" height="150%" style="transition: transform 1s; margin-left: 10%;" class="moveOnHover">
+    <div style="width: 55%;" class="moveOnHover">
+        <h2><a href="студенты.html" target="_blank">Лучшая группа колледжа</a></h2>
+        <b><p>Без вопросов и длительных размышлений это ествественно СИП 113-23! Самая лучшая группа колледжа, которая без каких либо проблем и препятствий смогла преодолеть 1 курс!</p></b>
+    </div>
+</div>
+</div>
+<script>
+    // Add this script to the end of your HTML file
+    const blocks = document.querySelectorAll('.block');
+
+    blocks.forEach((block) => {
+        block.addEventListener('mouseover', () => {
+            block.style.transform = "scale(1.05)";
+        });
+
+        block.addEventListener('mouseout', () => {
+            block.style.transform = "scale(1)";
+        });
+    });
+</script>
+
+
+<div class="footer">
+    <p>© 2024 keloguys. Все права защищены.</p>
+    <a href="https://kst.mskobr.ru/" target="_blank" class="animated-link">Колледж</a> | 
+    <a href="two.html" class="animated-link" >Отзыв о сайте</a> |
+    <a href="студенты.html" class="animated-link" >Студенты</a> |
+    <a href="https://t.me/qwerty3790" target="_blank" class="animated-link">Моя телега</a>
+</div>
+
+<style>
+.animated-link {
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    color: #000;
+}
+
+.animated-link:hover {
+    color: #f00;
+    transform: scale(1.1);
+}
+</style>
+
+<script>
+// Add this script to the end of your HTML file
+const blocks = document.querySelectorAll('.block');
+
+blocks.forEach((block) => {
+    block.addEventListener('mouseover', () => {
+        block.style.transform = "scale(1.05)";
+    });
+
+    block.addEventListener('mouseout', () => {
+        block.style.transform = "scale(1)";
+    });
+});
+</script>
+</body>
+</html>
